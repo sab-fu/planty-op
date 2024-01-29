@@ -350,7 +350,7 @@ form input[type="submit"] {
 	}
 }
 
-/* pour mobile*/
+/* pour mobile s*/
 @media only screen and (min-width: 200px) and (max-width: 700px) {
 	.wp-block-media-text__media img,
 	.wp-block-media-text__media video {
