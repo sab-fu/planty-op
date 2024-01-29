@@ -18,7 +18,7 @@ function add_admin_link( $items, $args ) {
     // est-ce que l'utilisateur est bien connecté ?
     if (is_user_logged_in()) {
         //si oui, on affiche le lien admin
-        $items .= '<li class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-link" href="'. get_admin_url() .'">Admin</a></li>';
+        $items .= '<li class="menu-item menu-item-type-post_type  menu-item-object-page"><a class="menu-link" href="'. get_admin_url() .'">Admin</a></li>';
     }
     return $items;
 }
