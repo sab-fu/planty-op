@@ -1,0 +1,505 @@
+/**
+ * Theme Name:     Astra Child
+ * Author:         Brainstorm Force
+ * Template:       astra
+ * Text Domain:	   astra-child
+ * Description:    Astra is fast, fully customizable
+ */
+/*construction page*/
+#masthead .ast-container,
+.site-header-focus-item + .ast-breadcrumbs-wrapper {
+	padding-left: 35px;
+}
+
+.entry-content h1,
+h1 {
+	padding-top: 15px;
+}
+.ast-builder-grid-row {
+	display: grid;
+	grid-template-columns: auto auto;
+	align-items: center;
+	grid-column-gap: 20px;
+	overflow-wrap: anywhere;
+	width: 1500px;
+}
+.ast-builder-menu-1 .menu-item.current-menu-item > .menu-link {
+	padding-left: 0;
+	padding-right: 20px;
+}
+
+.ast-header-button-1 .ast-custom-button {
+	width: 236px;
+	height: 80px;
+	text-align: center;
+	padding-top: 30px;
+	margin-right: -50px;
+}
+
+.ast-above-header-bar .site-above-header-wrap {
+	width: 2000px;
+	margin: 0;
+	padding-left: 10px;
+}
+
+.entry-content > .wp-block-cover {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.entry-content[ast-blocks-layout]
+	> .wp-block-cover
+	.wp-block-cover__inner-container {
+	max-width: 100%;
+}
+.entry-content[ast-blocks-layout] > figure {
+	padding-left: 0;
+	padding-right: 0;
+	max-width: 100%;
+}
+.wp-container-10.wp-container-10,
+.wp-container-14.wp-container-14 {
+	gap: 0;
+}
+.wp-block-columns {
+	gap: 0;
+	padding: 0;
+}
+.wp-container-core-group-layout-1.wp-container-core-group-layout-1 {
+	position: relative;
+}
+.wp-block-button .wp-block-button__link {
+	box-shadow: 0px 0px 0 #00000026;
+	width: 193px;
+	height: 55px;
+}
+.wp-image-25 {
+	position: absolute;
+	z-index: 2;
+	left: 75%;
+	bottom: 10%;
+}
+
+/*formulaire de renseignements page nous rencontrer*/
+
+.form {
+	background: #3b8e46;
+	width: 900px;
+}
+
+.form-container {
+	display: flex;
+	justify-content: space-evenly;
+	color: white;
+	align-items: center;
+	width: 100%;
+}
+
+.form-container h3 {
+	color: white;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 36px;
+}
+
+.form-container hr {
+	width: 1px;
+	background: white;
+	height: 340px;
+	margin: 0;
+}
+
+form input[type="text"],
+form input[type="email"] {
+	border-radius: 7px;
+	background: #fff;
+	box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.04);
+}
+
+form input[type="submit"] {
+	margin: auto;
+	display: block;
+	min-width: 128px;
+	margin-bottom: 1em;
+	background-color: #e0b9b4;
+	border-radius: 5px;
+}
+.wpcf7 input:not([type="submit"]),
+.wpcf7 select,
+.wpcf7 textarea {
+	width: 383px;
+	padding: 0.75em;
+}
+
+.form-rencontrer {
+	position: relative;
+	margin-left: 5%;
+	z-index: 2;
+}
+
+.wpcf7 textarea {
+	height: 237px;
+}
+
+.petite-fleur {
+	position: absolute;
+	bottom: 250px;
+	left: 490px;
+	z-index: 1;
+}
+/* formulaire commande */
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.imgcom {
+	text-align: center;
+	margin: 10px;
+	position: relative;
+	height: 250px;
+	width: 192px;
+}
+
+.container img {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.texte,
+.texte2,
+.texte3,
+.texte4 {
+	position: absolute;
+	bottom: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	padding: 5px;
+	font-weight: 800;
+	font-size: 20px;
+	width: 100%;
+	height: 50px;
+}
+
+.compteur {
+	text-align: center;
+	width: 50px;
+	background-color: white;
+
+	color: #888;
+	width: 39px;
+	height: 56px;
+	margin-left: 40%;
+	margin-top: -70px;
+}
+.separateur {
+	background-color: white;
+	height: 2px;
+}
+.bouton-container {
+	text-align: center;
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+}
+/* pour ne pas voir le bouton admin*/
+#astra-footer-menu .menu-item:last-child {
+	display: none;
+}
+
+/*pour tabette*/
+@media only screen and (max-width: 1100px) {
+	.wp-image-25 {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 920px) {
+	#rencontrer {
+		display: flex;
+		align-items: center;
+	}
+	.has-text-align-center {
+		width: 100%;
+	}
+	.premiere-partie {
+		display: flex;
+		justify-content: space-around;
+		border-bottom: 4px solid white;
+		flex-direction: column;
+		align-items: center;
+	}
+	.entry-content h1,
+	h1 {
+		padding-top: 50px;
+	}
+	.form-container {
+		display: flex;
+		justify-content: space-evenly;
+		color: white;
+		align-items: center;
+		width: 100%;
+		flex-direction: column;
+	}
+	.form-container hr {
+		width: 0px;
+		height: 0px;
+		margin: 0;
+	}
+}
+@media only screen and (max-width: 780px) {
+	.container {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+	.form-container {
+		flex-direction: column;
+		align-items: center;
+		margin-left: 0;
+		margin-right: 50px;
+	}
+	.wpcf7 input:not([type="submit"]),
+	.wpcf7 select,
+	.wpcf7 textarea {
+		width: 200px;
+	}
+	.form-container hr {
+		display: none;
+	}
+	h2,
+	.entry-content h2 {
+		font-weight: 400;
+		font-size: 20px;
+	}
+	.wp-container-core-column-layout-1.wp-container-core-column-layout-1 > * {
+		display: none;
+	}
+	.wp-block-uagb-container .uagb-block-d256de0c {
+		font-size: 25px;
+	}
+	.form-container-1 {
+		display: flex;
+		justify-content: center;
+	}
+
+	.premiere-partie {
+		display: flex;
+		justify-content: space-around;
+		border-bottom: 4px solid white;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.form-container {
+		display: flex;
+		justify-content: space-evenly;
+		color: white;
+		align-items: center;
+		width: 100%;
+		flex-direction: column;
+	}
+
+	.wp-image-25 {
+		display: none;
+	}
+	.wp-image-23 {
+		display: none;
+	}
+	.wp-block-uagb-container h2 {
+		font-weight: 800;
+		font-size: small;
+	}
+	.has-text-align-center {
+		width: 100%;
+	}
+	.form-container hr {
+		width: 0px;
+		height: 0px;
+		margin: 0;
+	}
+	.wp-block-uagb-container h2 {
+		margin-top: 200px;
+	}
+	.wp-image-46 {
+		margin-top: 50px;
+	}
+	.wp-block-uagb-container,
+	.uagb-block-368c3bc4,
+	.alignfull,
+	.uagb-is-root-container {
+		margin: 0;
+		padding: 0;
+	}
+	.wpcf7 form > div,
+	.wpcf7 form > p {
+		display: flex;
+		justify-content: center;
+	}
+	.wp-block-media-text__media img,
+	.wp-block-media-text__media video {
+		width: 50%;
+		margin-left: 90px;
+	}
+	.form-partie-deux {
+		min-width: 277px;
+	}
+}
+
+/* pour mobile*/
+@media only screen and (min-width: 200px) and (max-width: 700px) {
+	.wp-block-media-text__media img,
+	.wp-block-media-text__media video {
+		width: 40%;
+		margin-left: 50px;
+	}
+	.entry-content h1,
+	h1 {
+		font-size: 25px;
+	}
+	.has-text-align-center,
+	.has-ast-global-color-3-color,
+	.has-text-color {
+		font-size: 15px !important;
+	}
+	.wp-block-spacer {
+		height: 10px !important;
+	}
+
+	.wp-block-uagb-container.uagb-is-root-container.alignfull.uagb-block-aeb85b83
+		> .uagb-container-inner-blocks-wrap {
+		padding-left: 10px;
+	}
+	.wp-container-core-column-layout-1.wp-container-core-column-layout-1 > * {
+		display: none;
+	}
+	.wp-block-uagb-image-gallery {
+		width: 200px;
+	}
+	.entry-content h1,
+	h1 {
+		padding-top: 50px;
+	}
+	#rencontrer {
+		margin-left: 0;
+		width: 100%;
+		padding-right: 40px;
+	}
+	.entry-content[ast-blocks-layout] .alignfull {
+		width: 100%;
+	}
+
+	.wp-block-uagb-container {
+		margin: 0;
+	}
+
+	.wpcf7-form-control-wrap {
+		width: 100px;
+	}
+	form input[type="submit"] {
+		margin: auto;
+		align-items: flex-start;
+		min-width: 128px;
+		margin-bottom: 1em;
+		background-color: #e0b9b4;
+		border-radius: 5px;
+	}
+
+	.wp-block-uagb-container h2 {
+		font-weight: 800;
+		font-size: medium;
+	}
+	.has-text-align-center {
+		width: 100%;
+	}
+
+	.premiere-partie {
+		display: flex;
+		justify-content: space-around;
+		border-bottom: 4px solid white;
+		flex-direction: column;
+		align-items: flex-start;
+		width: 300px;
+	}
+
+	.form-container hr {
+		width: 0px;
+		height: 0px;
+		margin: 0;
+	}
+
+	.entry-content h2 {
+		font-weight: 800;
+		font-size: 20px;
+	}
+	.wp-block-heading.has-text-align-center h2 {
+		font-size: 24px;
+	}
+	.form-partie-deux {
+		min-width: 277px;
+	}
+}
+
+/*  /*commander  */
+
+.premiere-partie {
+	display: flex;
+	justify-content: space-around;
+	border-bottom: 4px solid white;
+}
+
+.form-control {
+	width: 25%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 5px;
+}
+
+.form-control input[type="text"] {
+	width: 51px;
+	border-radius: 7px 0 0 7px;
+}
+
+.form-control p {
+	display: flex;
+	position: relative;
+	align-items: stretch;
+}
+.form-control button {
+	height: 49%;
+	padding: 4px 18px;
+}
+
+.form-control .plus {
+	position: absolute;
+	left: 51px;
+	top: 0;
+	border-radius: 0 7px 0 0;
+}
+
+.form-control .moins {
+	position: absolute;
+	left: 51px;
+	bottom: 0;
+	border-top: 1px solid white;
+	border-radius: 0 0 7px 0;
+}
+.premiere-partie h3 {
+	position: absolute;
+	top: 9%;
+	color: white;
+}
+
+.ok-btn {
+	border-bottom-width: 51px;
+	border-right-width: 50px;
+}
+.bouton {
+	padding-right: 45px;
+}
